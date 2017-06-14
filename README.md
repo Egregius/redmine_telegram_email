@@ -1,5 +1,10 @@
 # Telegram messages plugin for Redmine
 
+Credits go to massdest for this plugin, see https://github.com/massdest/redmine_telegram_email
+Only difference in this fork is that messages are sent without sound.
+This is done by adding 1 line to the lib:
+params[:disable_notification] = 1
+
 This plugin send messages as email, only to the Telegram. So you can disable email and use Telegram only, or use both.  
 
 ## Installation
@@ -7,7 +12,7 @@ This plugin send messages as email, only to the Telegram. So you can disable ema
 From your Redmine plugins directory, clone this repository as `redmine_telegram_email` (note
 the underscore!):
 
-    git clone https://github.com/massdest/redmine_telegram_email redmine_telegram_email
+    git clone https://github.com/Egregius/redmine_telegram_email redmine_telegram_email
 
 You will also need the `httpclient` dependency, which can be installed by running
 
