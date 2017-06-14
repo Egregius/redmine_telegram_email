@@ -31,6 +31,7 @@ module TelegramMailerPatch
       params[:chat_id] = channel if channel
       params[:parse_mode] = "HTML"
       params[:disable_web_page_preview] = 1
+      params[:disable_notification] = 1
 
       if attachment
         
