@@ -90,10 +90,6 @@ module TelegramMailerPatch
         :title => I18n.t("field_priority"),
         :value => escape(issue.priority.to_s),
         :short => true
-      }, {
-        :title => I18n.t("field_assigned_to"),
-        :value => escape(issue.assigned_to.to_s),
-        :short => true
       }]
       attachment[:fields] << {
         :title => I18n.t("field_watcher"),
